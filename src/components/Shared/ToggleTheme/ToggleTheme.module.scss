@@ -1,0 +1,25 @@
+@use '../../../styles/shared/variables';
+
+.toggle_theme {
+  background-color: transparent;
+  cursor: pointer;
+
+  @media screen and (max-width: variables.$small_screen) {
+    padding: 10px;
+  }
+}
+
+.toggle_theme_icon {
+  margin-right: 6px;
+  vertical-align: bottom;
+
+  @media screen and (max-width: variables.$small_screen) {
+    margin: 0;
+  }
+}
+
+.toggle_theme_text {
+  @media screen and (max-width: variables.$small_screen) {
+    display: none;
+  }
+}

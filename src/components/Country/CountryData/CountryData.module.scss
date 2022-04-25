@@ -1,0 +1,28 @@
+@use '../../../styles/shared/variables';
+
+.country_data {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  row-gap: 50px;
+}
+
+.country_data_name {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.country_data_items {
+  display: flex;
+  gap: 200px;
+  line-height: 30px;
+
+  @media screen and (max-width: variables.$larger_screen) {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.data_field_heading {
+  font-weight: 700;
+}

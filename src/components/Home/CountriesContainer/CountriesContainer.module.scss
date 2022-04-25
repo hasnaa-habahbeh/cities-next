@@ -1,0 +1,26 @@
+@use '../../../styles/shared/variables';
+
+.countries_list_container {
+  display: grid;
+  grid-column-gap: 8%;
+  grid-row-gap: 60px;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media screen and (max-width: variables.$large_screen) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: variables.$medium_screen) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: variables.$small_screen) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.countries_list {
+  @media screen and (max-width: variables.$small_screen) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

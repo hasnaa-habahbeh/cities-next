@@ -1,0 +1,30 @@
+@use '../../../styles/shared/themes';
+@use '../../../styles/shared/variables';
+
+.dropdown {
+  max-width: 240px;
+  position: relative;
+  width: 100%;
+
+  @media screen and (max-width: variables.$medium_screen) {
+    max-width: 700px;
+  }
+}
+
+.dropdown_label {
+  background-color: themes.$secondary-background;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px themes.$shadow;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  width: 100%;
+}
+
+.dropdown_label_text {
+  color: themes.$input;
+}
+.dropdown_label_icon {
+  fill: themes.$input;
+}

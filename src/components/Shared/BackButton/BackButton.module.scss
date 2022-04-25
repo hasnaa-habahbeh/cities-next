@@ -1,0 +1,10 @@
+@use '../../../styles/shared/partials';
+
+.back_button {
+  @extend %button;
+}
+
+.back_button_icon {
+  margin-right: 6px;
+  vertical-align: bottom;
+}

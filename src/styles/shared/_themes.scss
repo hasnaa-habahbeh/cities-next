@@ -1,0 +1,96 @@
+@use './colors';
+
+$primary-background: colors.$white-98;
+$secondary-background: colors.$white-100;
+$shadow: colors.$white-88;
+$input: colors.$white-52;
+$text: colors.$black;
+
+.light {
+  background-color: $primary-background;
+}
+
+.dark {
+  $primary-background: colors.$veryDarkBlue;
+  $secondary-background: colors.$darkBlue;
+  $text: colors.$white-98;
+  $shadow: colors.$faded-black;
+  $input: colors.$white-88;
+
+  background-color: $primary-background;
+
+  * {
+    color: $text !important;
+  }
+
+  .Header_header__NLhag {
+    background-color: $secondary-background;
+    box-shadow: 0 2px 5px $shadow;
+  }
+
+  .Filters_filtering_container__NXaSU {
+    .SearchBox_search_container__dCsFr {
+      background-color: $secondary-background;
+      box-shadow: 0 2px 5px $shadow;
+
+      .SearchBox_search_icon__JXSqw {
+        fill: $input;
+      }
+    }
+
+    ::placeholder {
+      color: $input;
+    }
+
+    :-ms-input-placeholder {
+      color: $input;
+    }
+
+    ::-ms-input-placeholder {
+      color: $input;
+    }
+
+    .Dropdown_dropdown__rgCKo {
+      .Dropdown_dropdown_label__IZPZJ {
+        background-color: $secondary-background;
+        box-shadow: 0 2px 5px $shadow;
+
+        .Dropdown_dropdown_label_text__F9gw4 {
+          color: $input;
+        }
+
+        .Dropdown_dropdown_label_icon__Z_E9d {
+          fill: $input;
+        }
+      }
+
+      .DropdownItems_dropdown_list__sR_R1 {
+        background-color: $secondary-background;
+        box-shadow: 0 2px 5px $shadow;
+
+        .DropdownItems_dropdown_list_item {
+          color: $input;
+        }
+      }
+    }
+  }
+
+  .CountryCard_country_card__4CL3i {
+    background-color: $secondary-background;
+    box-shadow: 0 2px 5px $shadow;
+
+    .CountryCard_country_card_field__9DFgc {
+      color: darken($text, 20%);
+    }
+  }
+
+  .BackButton_back_button__X3_nF,
+  .BorderCountries_border_country_button___JkiS {
+    background-color: $secondary-background;
+    box-shadow: 0 2px 5px $shadow;
+  }
+
+  .Country_country_flag__KEwFp {
+    box-shadow: 0 2px 5px $shadow;
+  }
+}

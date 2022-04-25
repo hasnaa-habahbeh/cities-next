@@ -1,0 +1,25 @@
+.toggle_theme {
+  background-color: transparent;
+  cursor: pointer;
+}
+@media screen and (max-width: 520px) {
+  .toggle_theme {
+    padding: 10px;
+  }
+}
+
+.toggle_theme_icon {
+  margin-right: 6px;
+  vertical-align: bottom;
+}
+@media screen and (max-width: 520px) {
+  .toggle_theme_icon {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .toggle_theme_text {
+    display: none;
+  }
+}/*# sourceMappingURL=ToggleTheme.module.css.map */

@@ -1,0 +1,26 @@
+@use '../../styles/shared/themes';
+@use '../../styles/shared/variables';
+
+.header {
+  align-items: center;
+  background-color: themes.$secondary-background;
+  box-shadow: 0 2px 5px themes.$shadow;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.main_heading_anchor {
+  text-decoration: none;
+}
+
+.main_heading_text {
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 700;
+
+  @media screen and (max-width: variables.$small_screen) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,14 @@
+@use '../../../styles/shared/variables';
+@import '../../../styles/shared/partials';
+
+.border_countries {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+}
+
+.border_country_button {
+  @extend %button;
+}

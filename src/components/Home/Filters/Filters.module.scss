@@ -1,0 +1,13 @@
+@use '../../../styles/shared/variables';
+
+.filtering_container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+
+  @media screen and (max-width: variables.$medium_screen) {
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

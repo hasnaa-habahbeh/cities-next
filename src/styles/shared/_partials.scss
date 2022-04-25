@@ -1,0 +1,12 @@
+@use './themes';
+
+%button {
+  background-color: themes.$secondary-background;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px themes.$shadow;
+  cursor: pointer;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 140px;
+}

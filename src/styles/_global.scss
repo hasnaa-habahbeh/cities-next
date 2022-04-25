@@ -1,0 +1,19 @@
+@use './shared/variables';
+
+* {
+  box-sizing: border-box;
+}
+
+.space-from-edges {
+  padding: 40px 50px;
+}
+
+h1,
+h2,
+h3,
+p,
+span {
+  @media screen and (max-width: variables.$small_screen) {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,47 @@
+@use '../../../styles/shared/themes';
+@use '../../../styles/shared/variables';
+
+.search_container {
+  align-items: center;
+  background-color: themes.$secondary-background;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px themes.$shadow;
+  display: flex;
+  padding: 14px 20px;
+  width: 440px;
+
+  @media screen and (max-width: variables.$medium_screen) {
+    max-width: 700px;
+    padding: 18px 20px;
+    width: 100%;
+  }
+}
+
+.search_icon {
+  color: themes.$input;
+  fill: themes.$input;
+  font-size: 20px;
+  margin-bottom: 2px;
+  min-width: 20px;
+
+  @media screen and (max-width: variables.$medium_screen) {
+    font-size: 14px;
+  }
+}
+
+.search_input {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding: 0 8px;
+  width: 80%;
+
+  @media screen and (max-width: variables.$medium_screen) {
+    font-size: 14px;
+  }
+}
+
+.search_input::placeholder {
+  color: themes.$input;
+  opacity: 1;
+}
