@@ -13,15 +13,14 @@ const SearchBox = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    name && dispatch(filterByName(name));
-    !name && dispatch(resetDisplayed());
+    !!name ? dispatch(filterByName(name)) : dispatch(resetDisplayed());
   }, [name, dispatch]);
 
-  const updateQuery = (e) => {
+  const updateInput = (e) => {
     setName(e?.target?.value);
   };
 
-  const debouncedOnChange = debounce(updateQuery, 800);
+  const debouncedOnChange = debounce(updateInput, 800);
 
   return (
     <div className={styles.search_container}>
