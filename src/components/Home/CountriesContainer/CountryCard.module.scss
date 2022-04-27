@@ -6,12 +6,19 @@
   border-radius: 10px;
   box-shadow: 0 2px 5px themes.$shadow;
   cursor: pointer;
-  height: 380px;
-  line-height: 20px;
+  height: 370px;
+  line-height: 22px;
   max-width: 350px;
   overflow: hidden;
   text-decoration: none;
   width: 100%;
+
+  @media screen and (min-width: variables.$larger_screen) {
+    height: 450px;
+    line-height: 26px;
+    margin: auto;
+    max-width: 450px;
+  }
 
   @media screen and (max-width: variables.$small_screen) {
     height: 350px;
@@ -24,17 +31,36 @@
   max-width: 350px;
   object-fit: cover;
   width: 100%;
+
+  @media screen and (min-width: variables.$larger_screen) {
+    height: 240px;
+    max-width: 450px;
+  }
 }
 
 .country_card_field {
   color: lighten(themes.$text, 20%);
-  padding: 4px 20px;
+  padding: 2px 20px;
+
+  @media screen and (min-width: variables.$larger_screen) {
+    padding: 6px 20px;
+  }
 }
 
 .country_card_country_name {
   font-size: 18px;
   font-weight: 700;
   padding: 22px 20px 10px;
+
+  @media screen and (min-width: variables.$larger_screen) {
+    font-size: 28px;
+  }
+}
+
+.country_card_field {
+  @media screen and (min-width: variables.$larger_screen) {
+    font-size: 22px;
+  }
 }
 
 .country_card_field_heading {
